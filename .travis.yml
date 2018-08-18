@@ -23,6 +23,6 @@ after_success:
   - cd output ; mv book.html index.html ; cp -R ../images images
   - git init
   - git config user.name "${GH_USER_NAME}"
-  - git config user.email "{GH_USER_EMAIL}"
+  - git config user.email "${GH_USER_EMAIL}"
   - git add . ; git commit -m "Deploy to GitHub Pages"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}/${TRAVIS_BRANCH}" master:gh-pages > /dev/null 2>&1
