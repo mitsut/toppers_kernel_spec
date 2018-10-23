@@ -20,10 +20,11 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - git worktree gh gh-pages
+  - ls
+  - git worktree add gh gh-pages
   - mv output/book.html output/index.html
-  - mv -f output gh/"${TRAVIS_BRANCH}"
   # - cd output ; mv book.html index.html ; cp -R ../images images
+  - mv -f output gh/"${TRAVIS_BRANCH}"
   - cd gh
   - git init
   - git config user.name "${GH_USER_NAME}"
