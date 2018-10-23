@@ -720,7 +720,7 @@ act_tskにおいてtskidにTSK_SELF（＝0）を指定すると，自タスク�
 マルチプロセッサ対応カーネルでは，act_tsk／iact_tskは，対象タスクの次回
 起動時の割付けプロセッサを変更しない．
 
-[[API_act_tsk]]
+[[API_mact_tsk]]
 ----
 mact_tsk	割付けプロセッサ指定でのタスクの起動〔TM〕【NGKI1122】
 imact_tsk	割付けプロセッサ指定でのタスクの起動〔IM〕【NGKI1123】
