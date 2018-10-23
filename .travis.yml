@@ -20,12 +20,13 @@ after_failure:
   - docker logs asciidoc-to-pdf
 
 after_success:
-  - git branch
-  - git clone -b gh-pages "https://${GH_TOKEN}@${GH_REF}" gh
+  - git branch ; git branch --remote
+  - git worktree add -b gh-pages gh
+#  - git clone -b gh-pages "https://${GH_TOKEN}@${GH_REF}" gh
   - ls
-  - git branch
   - mv output/book.html output/index.html
   # - cd output ; mv book.html index.html ; cp -R ../images images
+  - rm -rf gh/"${TRAVIS_BRANCH}"
   - mv -f output gh/"${TRAVIS_BRANCH}"
   - cd gh
   - git init
