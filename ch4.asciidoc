@@ -1,6 +1,5 @@
-:numbered:
 [[ch4_kernel_api, カーネルAPI仕様]]
-==　カーネルAPI仕様
+== カーネルAPI仕様
 
 この章では，カーネルのAPI仕様について規定する．
 

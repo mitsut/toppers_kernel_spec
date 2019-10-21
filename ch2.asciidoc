@@ -1,6 +1,5 @@
-:numbered:
 [[ch2_concepts_and_Common_definision,主要な概念と共通定義]]
-==　主要な概念と共通定義
+== 主要な概念と共通定義
 
 === 仕様の位置付け
 

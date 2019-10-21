@@ -1,5 +1,4 @@
-:numbered:
-[ch3_system_interface_layer,システムインタフェースレイヤAPI仕様]
+[[ch3_system_interface_layer,システムインタフェースレイヤAPI仕様]]
 == システムインタフェースレイヤAPI仕様
 
 === システムインタフェースレイヤの概要
