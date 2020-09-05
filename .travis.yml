@@ -9,19 +9,19 @@ services:
 
 before_install:
   - mkdir -p output
-  - docker pull asciidoctor/docker-asciidoctor
+  - docker pull htakeuchi/docker-asciidoctor-jp
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor -D /documents/output *.asciidoc
-#  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf asciidoctor/docker-asciidoctor asciidoctor-pdf -D /documents/output *.asciidoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-html htakeuchi/docker-asciidoctor-jp asciidoctor -D /documents/output *.asciidoc
+  - docker run -v $TRAVIS_BUILD_DIR:/documents/ --name asciidoc-to-pdf htakeuchi/docker-asciidoctor-jp asciidoctor-pdf  -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-style=KaiGenGothicJP -D /documents/output *.asciidoc
 
 after_error:
   - docker logs asciidoc-to-html
-#  - docker logs asciidoc-to-pdf
+  - docker logs asciidoc-to-pdf
 
 after_failure:
   - docker logs asciidoc-to-html
-#  - docker logs asciidoc-to-pdf
+  - docker logs asciidoc-to-pdf
 
 after_success:
   - cd output ; mv README.html index.html ; cp -R ../images images
