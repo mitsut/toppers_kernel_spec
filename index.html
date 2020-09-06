@@ -1,0 +1,45 @@
+<h1 id="toppers-kernel-specification-for-htmlrichtext.">TOPPERS Kernel Specification for HTML(richtext).</h1>
+<h2 id="aim">Aim</h2>
+<p><a href="https://www.toppers.jp/">TOPPERS</a>カーネル統合仕様書のリッチテキスト表示を行います。</p>
+<p>TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトして、リッチテキスト形式に変換をしています。</p>
+<p>第3世代カーネル統合仕様書についてはリッチテキスト対応を行っているので、HTML出力の結果をGithubPagesに出力します。</p>
+<h2 id="toppers第3世代カーネルitron系統合仕様書">TOPPERS第3世代カーネル（ITRON系）統合仕様書</h2>
+<ul>
+<li><a href="https://mitsut.github.io/toppers_kernel_spec/tgki_spec-341.html">Rekease 3.4.1</a></li>
+<li><a href="https://mitsut.github.io/toppers_kernel_spec/tgki_spec-340.html">Rekease 3.4.0</a></li>
+</ul>
+<h2 id="toppers新世代カーネル統合仕様書">TOPPERS新世代カーネル統合仕様書</h2>
+<ul>
+<li><a href="https://mitsut.github.io/toppers_kernel_spec/ngki_spec-171.html">Rekease 1.7.1</a></li>
+</ul>
+<h2 id="免責">免責</h2>
+<p>本資料はTOPPERSプロジェクトが公開している統合仕様書のPDFからリライトしています。修正事項があれば、Issueへの登録をお願いします。</p>
+<p>公式のリリースはTOPPERSプロジェクトから<a href="https://www.toppers.jp/documents.html">PDF形式で公開</a>されています。</p>
+<h2 id="references">References</h2>
+<p>本プロジェクトは <a href="https://www.toppers.jp/contest.html#2016">第6回TOPPERS活用アイデア・アプリケーション開発コンテスト</a> の活用アイデア部門として応募していますので、 詳しくはコンテスト応募資料をご覧ください。</p>
+<p>活用アイデア部門にて銀賞を受賞しました!</p>
+<h2 id="requirement">Requirement</h2>
+<ul>
+<li>Ruby</li>
+<li>asciidoctor</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<pre><code>git checkout &lt;branches&gt;
+asciidoctor -b html book.asciidoc
+asciidoctor-pdf -b pdf book.asciidoc</code></pre>
+<h2 id="install">Install</h2>
+<pre><code>sudo gem install asciidoctor
+sudo gem install asciidoctor-pdf
+or
+sudo gem install asciidoctor
+sudo gem install asciidoctor-pdf-cjk</code></pre>
+<h2 id="contribution">Contribution</h2>
+<h2 id="outputgithub-pages">Output(Github Pages)</h2>
+<ul>
+<li><a href="https://mitsut.github.io/toppers_kernel_spec/">html</a></li>
+<li><a href="https://mitsut.github.io/toppers_kernel_spec/book.pdf">pdf</a></li>
+</ul>
+<h2 id="licence">Licence</h2>
+<p>TOPPERS Licence (http://www.toppers.jp/license.html)</p>
+<h2 id="author">Author</h2>
+<p><a href="https://github.com/mitsut">mitsut</a></p>
