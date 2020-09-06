@@ -1,7 +1,30 @@
-TOPPERS Kernel Specification for asciidoc
+TOPPERS Kernel Specification for HTML(richtext).
 ====
 
-TOPPERS統合仕様書をASCIIDOC形式でリライトした
+## Aim
+TOPPERSカーネル統合仕様書のリッチテキスト表示を行います。
+
+TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトして、リッチテキスト形式に変換をしています。
+
+第3世代カーネル統合仕様書についてはリッチテキスト対応を行っているので、HTML出力の結果をGithubPagesに出力します。
+
+## TOPPERS第3世代カーネル（ITRON系）統合仕様書
+
+* [Rekease 3.4.1](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-341.html)
+* [Rekease 3.4.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-340.html)
+
+## TOPPERS新世代カーネル統合仕様書
+
+* [Rekease 1.7.1](https://mitsut.github.io/toppers_kernel_spec/ngki_spec-171.html)
+
+## 免責
+本資料はTOPPERSプロジェクトが公開している統合仕様書のPDFからリライトしています。修正事項があれば、Issueへの登録をお願いします。
+
+## References
+本プロジェクトは [第6回TOPPERS活用アイデア・アプリケーション開発コンテスト](https://www.toppers.jp/contest.html#2016) の活用アイデア部門として応募していますので、
+詳しくはコンテスト応募資料をご覧ください。
+
+活用アイデア部門にて銀賞を受賞しました!
 
 ## Requirement
 
