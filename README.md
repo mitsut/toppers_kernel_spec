@@ -2,7 +2,7 @@ TOPPERS Kernel Specification for HTML(richtext).
 ====
 
 ## Aim
-TOPPERSカーネル統合仕様書のリッチテキスト表示を行います。
+[TOPPERS](https://www.toppers.jp/)カーネル統合仕様書のリッチテキスト表示を行います。
 
 TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトして、リッチテキスト形式に変換をしています。
 
@@ -19,6 +19,8 @@ TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトし�
 
 ## 免責
 本資料はTOPPERSプロジェクトが公開している統合仕様書のPDFからリライトしています。修正事項があれば、Issueへの登録をお願いします。
+
+公式のリリースはTOPPERSプロジェクトから[PDF形式で公開](https://www.toppers.jp/documents.html)されています。
 
 ## References
 本プロジェクトは [第6回TOPPERS活用アイデア・アプリケーション開発コンテスト](https://www.toppers.jp/contest.html#2016) の活用アイデア部門として応募していますので、
