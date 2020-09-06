@@ -10,15 +10,17 @@ TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトし�
 
 ## TOPPERS第3世代カーネル（ITRON系）統合仕様書
 
-* [Rekease 3.4.1](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-341.html)
-* [Rekease 3.4.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-340.html)
+* [Release 3.4.1](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-341.html)
+* [Release 3.4.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-340.html)
+* [Release 3.3.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-330.html)
+* [Release 3.2.1](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-321_richtext.html)
 
 ## TOPPERS新世代カーネル統合仕様書
 
-* [Rekease 1.7.1](https://mitsut.github.io/toppers_kernel_spec/ngki_spec-171.html)
+* [Release 1.7.1](https://mitsut.github.io/toppers_kernel_spec/ngki_spec-171.html)
 
 ## 免責
-本資料はTOPPERSプロジェクトが公開している統合仕様書のPDFからリライトしています。修正事項があれば、Issueへの登録をお願いします。
+本資料はTOPPERSプロジェクトが公開している統合仕様書のPDFからリライトしています。修正・追加の事項があれば、[Issue](https://github.com/mitsut/toppers_kernel_spec/issues)への登録をお願いします。
 
 公式のリリースはTOPPERSプロジェクトから[PDF形式で公開](https://www.toppers.jp/documents.html)されています。
 
