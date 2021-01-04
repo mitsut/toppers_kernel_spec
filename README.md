@@ -10,6 +10,8 @@ TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトし�
 
 ## TOPPERS第3世代カーネル（ITRON系）統合仕様書
 
+* [Release 3.5.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-350.html)
+* [Release 3.4.2](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-342.html)
 * [Release 3.4.1](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-341.html)
 * [Release 3.4.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-340.html)
 * [Release 3.3.0](https://mitsut.github.io/toppers_kernel_spec/tgki_spec-330.html)
