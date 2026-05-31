@@ -1,0 +1,16 @@
+{
+  "name": "TOPPERS Kernel Spec",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "website",
+  "workspaceFolder": "/workspace",
+  "postCreateCommand": "cd website && npm install",
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

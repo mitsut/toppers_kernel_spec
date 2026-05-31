@@ -1,0 +1,13 @@
+services:
+  website:
+    image: node:22-slim
+    working_dir: /workspace/website
+    volumes:
+      - .:/workspace
+      - node_modules:/workspace/website/node_modules
+    ports:
+      - "3000:3000"
+    command: sleep infinity
+
+volumes:
+  node_modules:
