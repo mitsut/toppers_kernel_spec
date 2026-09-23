@@ -53,6 +53,7 @@ const config: Config = {
             {label: 'Release 3.7.0 (最新)', to: '/spec?s=tgki'},
             {label: 'Release 3.6.0', to: '/spec?s=tgki&v=3.6.0'},
             {label: 'Release 3.5.0', to: '/spec?s=tgki&v=3.5.0'},
+            {label: 'Release 3.4.5 (長期サポート)', to: '/spec?s=tgki&v=3.4.5'},
             {label: 'Release 3.4.2', to: '/spec?s=tgki&v=3.4.2'},
             {label: 'Release 3.4.1', to: '/spec?s=tgki&v=3.4.1'},
             {label: 'Release 3.4.0', to: '/spec?s=tgki&v=3.4.0'},

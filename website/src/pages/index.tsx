@@ -12,6 +12,7 @@ interface SpecSeries {
   latestVersion: string;
   latestDate: string;
   versionCount: number;
+  ltsVersion?: string;
 }
 
 const specSeries: SpecSeries[] = [
@@ -21,7 +22,8 @@ const specSeries: SpecSeries[] = [
     subtitle: 'TOPPERS/ASP3, TOPPERS/FMP3, TOPPERS/HRP3, TOPPERS/HRMP3',
     latestVersion: '3.7.0',
     latestDate: '2024-05-28',
-    versionCount: 8,
+    versionCount: 9,
+    ltsVersion: '3.4.5',
   },
   {
     id: 'ngki',
@@ -33,20 +35,29 @@ const specSeries: SpecSeries[] = [
   },
 ];
 
-function SpecSeriesCard({id, title, subtitle, latestVersion, latestDate, versionCount}: SpecSeries): ReactNode {
+function SpecSeriesCard({id, title, subtitle, latestVersion, latestDate, versionCount, ltsVersion}: SpecSeries): ReactNode {
   return (
     <div className={styles.seriesCard}>
       <div>
         <Heading as="h3" className={styles.seriesTitle}>{title}</Heading>
         <p className={styles.seriesSubtitle}>{subtitle}</p>
         <p className={styles.seriesMeta}>
-          最新: Release {latestVersion}（{latestDate}）/ 全{versionCount}バージョン
+          最新: Release {latestVersion}（{latestDate}）
+          {ltsVersion && <> / 長期サポート: Release {ltsVersion}</>}
+          {' '}/ 全{versionCount}バージョン
         </p>
       </div>
       <div className={styles.seriesActions}>
         <Link className="button button--primary button--md" to={`/spec?s=${id}`}>
           最新版を読む
         </Link>
+        {ltsVersion && (
+          <Link
+            className="button button--outline button--primary button--md"
+            to={`/spec?s=${id}&v=${ltsVersion}`}>
+            長期サポート版を読む
+          </Link>
+        )}
         <Link className="button button--outline button--secondary button--md" to={`/spec?s=${id}`}>
           バージョン一覧
         </Link>

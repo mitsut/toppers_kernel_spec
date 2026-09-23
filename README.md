@@ -13,6 +13,7 @@ TOPPERS新世代カーネル統合仕様書はASCIIDOC形式でリライトし�
 * [Release 3.7.0](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki) (最新)
 * [Release 3.6.0](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.6.0)
 * [Release 3.5.0](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.5.0)
+* [Release 3.4.5](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.4.5) (長期サポート)
 * [Release 3.4.2](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.4.2)
 * [Release 3.4.1](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.4.1)
 * [Release 3.4.0](https://mitsut.github.io/toppers_kernel_spec/spec?s=tgki&v=3.4.0)

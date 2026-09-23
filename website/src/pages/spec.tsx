@@ -10,6 +10,7 @@ interface VersionInfo {
   file: string;
   date: string;
   external?: boolean;
+  lts?: boolean;
 }
 
 const specs: Record<string, {title: string; versions: VersionInfo[]}> = {
@@ -19,6 +20,7 @@ const specs: Record<string, {title: string; versions: VersionInfo[]}> = {
       {version: '3.7.0', file: 'https://www.toppers.jp/docs/tech/tgki_spec-370/tgki_spec-370.html', date: '2024-05-28', external: true},
       {version: '3.6.0', file: 'https://www.toppers.jp/docs/tech/tgki_spec-360/tgki_spec-360.html', date: '2023-03-30', external: true},
       {version: '3.5.0', file: 'tgki_spec-350.html', date: '2019-03-27'},
+      {version: '3.4.5', file: 'tgki_spec-345.html', date: '2026-05-08', lts: true},
       {version: '3.4.2', file: 'tgki_spec-342.html', date: '2018-04-18'},
       {version: '3.4.1', file: 'tgki_spec-341.html', date: '2017-07-17'},
       {version: '3.4.0', file: 'tgki_spec-340.html', date: '2017-07-10'},
@@ -265,7 +267,8 @@ export default function SpecViewer(): ReactNode {
               {spec.versions.map((v, i) => (
                 <option key={v.version} value={v.version}>
                   {v.version}
-                  {i === 0 ? ' (最新)' : ''} — {v.date}
+                  {i === 0 ? ' (最新)' : ''}
+                  {v.lts ? ' (長期サポート)' : ''} — {v.date}
                 </option>
               ))}
             </select>
