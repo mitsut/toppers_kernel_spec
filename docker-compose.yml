@@ -9,5 +9,13 @@ services:
       - "3000:3000"
     command: sleep infinity
 
+  spec:
+    image: asciidoctor/docker-asciidoctor
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    environment:
+      - LANG=C.UTF-8
+
 volumes:
   node_modules:
